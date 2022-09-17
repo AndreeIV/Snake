@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata&display=swap');
+::-webkit-scrollbar {
+    display: none;
+}
+
+* {
+    font-family: 'Share Tech Mono', monospace;
+    margin: 0;
+    padding: 0;
+    background-color: black;
+}
+
+.body {
+    width: 100vh;
+    height: 80vh;
+    position: relative;
+    
+} 
+.container {
+    position: absolute;;
+    width: 100%;
+    height: 100%;
+
+    top: 8%;
+    left: 50%;
+}
+
+.board, .boardInfo {
+    color: white;
+    max-width: 100%;
+}
+
+.board {
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    background-color: #456990;
+    border: 5px solid red;
+}
+
+.start, .boardInfo {
+    font-size: 25px;
+}
+
+.gameOver {
+    display: none;
+    color: white;
+}
+.boardInfo {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+.start {
+    background-color: tomato;
+    padding: 2px 5px;
+    border: none;
+    color: white;
+}
+
+.scoreBoard {
+    display: inline-flex;
+}
+
+.square {
+    width: 100%;
+    /* aspect-ratio: 1; */
+}
+.emptySquare {
+    background-color: #456990;
+}
+.snakeSquare {
+    background-color: #ccf47f;
+    border-radius: 50%;
+    
+}
+.foodSquare {
+    background-color: #f35a69;
+    border-radius: 25%;
+}
